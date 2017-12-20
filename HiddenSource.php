@@ -31,7 +31,7 @@ function HiddenSource( $output, $article, $title, $user, $request ) {
             // sets the page title to the title you want displayed to the user.
             $output->setPageTitle( 'Please log in to view the source' );
             // this sets the title bar to the standard MediaWiki "Error" title for error pages.  
-            $output->setHTMLTitle( wfMsg( 'errorpagetitle' ) );
+            $output->setHTMLTitle( wfMessage( 'errorpagetitle' )->text() );
             // this is for spiders, like GoogleBot, etc. telling them not to index this page
             $output->setRobotPolicy( 'noindex,nofollow' );
             // indicates that this is not related to an article
